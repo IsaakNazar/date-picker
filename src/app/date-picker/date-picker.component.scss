@@ -1,0 +1,26 @@
+.input-box-container {
+  position: relative;
+  text-align: center;
+  left: 400px;
+
+}
+.wrap {
+  display: flex;
+  margin: 0 auto;
+}
+
+.input-box {
+  padding:       4px 8px;
+  border-radius: 4px;
+  border:        1px solid #ccc;
+  font-size:     16px;
+}
+
+.calendar_icon {
+  border: 1px solid #ccc;
+  padding: 4px;
+  img {
+    height: 15px;
+
+  }
+}

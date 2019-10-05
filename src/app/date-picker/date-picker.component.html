@@ -1,0 +1,17 @@
+<div class="input-box-container">
+  <div class="wrap">
+
+    <span class="input-group-btn calendar_icon">
+              <span (click)="dp.toggleCalendar()">
+                  <img src="assets/icons/calendar.svg" alt="">
+              </span>
+          </span>
+      <div class="input-group">
+        <input class="input-box" placeholder="Click to select a date"
+               angular-mydatepicker name="mydate" (click)="dp.toggleCalendar()"
+               [(ngModel)]="model" [options]="myDpOptions"
+               #dp="angular-mydatepicker" (dateChanged)="onDateChanged($event)"/>
+
+      </div>
+  </div>
+</div>
