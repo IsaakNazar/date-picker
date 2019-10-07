@@ -9,8 +9,8 @@ import {IAngularMyDpOptions, IMyDateModel} from 'angular-mydatepicker';
 export class DatePickerComponent implements OnInit {
 
   myDpOptions: IAngularMyDpOptions = {
-    dateRange: false,
-    dateFormat: 'dd.mm.yyyy'
+    dateRange: true,
+    dateFormat: 'dd mmm, yyyy'
     // other options are here...
   };
 
