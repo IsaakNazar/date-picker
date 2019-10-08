@@ -3,21 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
-import {AngularMyDatePickerModule} from 'angular-mydatepicker';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AngularMyDatePickerModule } from 'angular-mydatepicker';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DonutChartComponent } from './donut-chart/donut-chart.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    DonutChartComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    AngularMyDatePickerModule
+    AngularMyDatePickerModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

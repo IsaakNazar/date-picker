@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {IAngularMyDpOptions, IMyDateModel} from 'angular-mydatepicker';
+import { IAngularMyDpOptions, IMyDateModel } from 'angular-mydatepicker';
 
 @Component({
   selector: 'date-picker',
@@ -16,9 +16,11 @@ export class DatePickerComponent implements OnInit {
 
   model: IMyDateModel = null;
 
-  constructor() { }
+  constructor() {
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   onDateChanged(event: IMyDateModel): void {
     // date selected
