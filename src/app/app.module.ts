@@ -8,13 +8,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DonutChartComponent } from './donut-chart/donut-chart.component';
 import { ChartsModule } from 'ng2-charts';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
+import { D3LearnComponent } from './d3-learn/d3-learn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatePickerComponent,
     DonutChartComponent,
-    DoughnutChartComponent
+    DoughnutChartComponent,
+    D3LearnComponent
   ],
   imports: [
     BrowserModule,
