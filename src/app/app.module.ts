@@ -7,12 +7,14 @@ import { AngularMyDatePickerModule } from 'angular-mydatepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DonutChartComponent } from './donut-chart/donut-chart.component';
 import { ChartsModule } from 'ng2-charts';
+import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatePickerComponent,
-    DonutChartComponent
+    DonutChartComponent,
+    DoughnutChartComponent
   ],
   imports: [
     BrowserModule,
