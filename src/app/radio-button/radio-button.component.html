@@ -1,0 +1,12 @@
+<div class="radio-btn">
+
+  <label for="but1">
+    <input type="radio" id="but1" name="radio_button" (change)="handleChange($event)">
+    <img *ngIf="isChecked" style="width: 20px;" src="assets/icons/checked.svg" alt="checked"/>
+    <img *ngIf="!isChecked" style="width: 20px;" src="assets/icons/nonchecked.svg" alt="nonchecked"/>
+    <span>hey there</span>
+  </label>
+  <br>
+
+</div>
+
