@@ -9,6 +9,7 @@ import { DonutChartComponent } from './donut-chart/donut-chart.component';
 import { ChartsModule } from 'ng2-charts';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
 import { D3LearnComponent } from './d3-learn/d3-learn.component';
+import { RadioButtonComponent } from './radio-button/radio-button.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { D3LearnComponent } from './d3-learn/d3-learn.component';
     DatePickerComponent,
     DonutChartComponent,
     DoughnutChartComponent,
-    D3LearnComponent
+    D3LearnComponent,
+    RadioButtonComponent
   ],
   imports: [
     BrowserModule,

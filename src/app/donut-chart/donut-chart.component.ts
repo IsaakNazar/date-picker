@@ -13,6 +13,7 @@ export class DonutChartComponent implements OnInit {
   data = [
     {platform: 'Android', percentage: 40.11},
     {platform: 'Windows', percentage: 36.69},
+    {platform: 'Linux', percentage: 46.69},
     {platform: 'iOS', percentage: 13.06}
   ];
 
@@ -39,7 +40,9 @@ export class DonutChartComponent implements OnInit {
 
     const path = d3.arc()
       .outerRadius(this.radius)
-      .innerRadius(this.radius - 40);
+      .innerRadius(this.radius - 60)
+      .padRadius(400);
+
 
     const arc = g.selectAll('arc')
       .data(pie(this.data))
@@ -50,15 +53,6 @@ export class DonutChartComponent implements OnInit {
       .attr('d', path)
       .attr('fill', d => color(d.data.percentage));
 
-    //
-    // const label = d3.arc()
-    //   .outerRadius(this.radius)
-    //   .innerRadius(0);
-    //
-    // arc.append('text')
-    //   .attr('transform', () =>  'translate(' + label + ')')
-    //   .attr('text-anchor', 'middle')
-    //   .text(d => d.data.platform + ':' + d.data.percentage + '%');
   }
 
 }
