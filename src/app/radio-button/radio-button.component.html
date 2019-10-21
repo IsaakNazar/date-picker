@@ -1,12 +1,16 @@
-<div class="radio-btn">
+<div class="radio-btn" (click)='selectType()'>
 
-  <label for="but1">
-    <input type="radio" id="but1" name="radio_button" (change)="handleChange($event)">
-    <img *ngIf="isChecked" style="width: 20px;" src="assets/icons/checked.svg" alt="checked"/>
-    <img *ngIf="!isChecked" style="width: 20px;" src="assets/icons/nonchecked.svg" alt="nonchecked"/>
-    <span>hey there</span>
+  <label for="{{value}}">
+    <input type="radio" 
+    id="{{value}}" 
+    name='{{controlFormName}}'
+    formControlName='{{controlFormName}}'>
+    <span><ng-content></ng-content></span>
   </label>
   <br>
 
 </div>
 
+<!-- https://stackblitz.com/edit/angular-hbgdn7?file=src%2Fapp%2Fapp.component.ts -->
+
+<!-- https://stackblitz.com/edit/angular-checkbox-list-radio-list-ngfor-reactive-form?file=src%2Fapp%2Fapp.component.ts -->

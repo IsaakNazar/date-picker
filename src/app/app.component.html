@@ -1,7 +1,10 @@
 <!--<date-picker></date-picker>-->
 
 <!--<donut-chart></donut-chart>-->
-<!--<form [formGroup]="userForm">-->
+<form [formGroup]="userForm">
 
-  <app-radio-button ></app-radio-button>
-<!--</form>-->
+  <app-radio-button *ngFor='let lead of leads'
+                    [value]='lead.id'
+                    controlFormName="radioControl"
+                    >{{lead.name}}</app-radio-button>
+</form>
